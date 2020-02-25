@@ -1,0 +1,55 @@
+/**
+ * columns
+ */
+
+.column {
+	flex: 1;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.span-1 { flex: .0833 }
+.span-2 { flex: .1666 }
+.span-3 { flex: .25 }
+.span-4 { flex: .333 }
+.span-5 { flex: .4166 }
+.span-6 { flex: .5 }
+.span-7 { flex: .58 }
+.span-8 { flex: .666666667 }
+.span-9 { flex: .75 }
+.span-10 { flex: .833 }
+.span-11 { flex: .916 }
+.span-12 { flex: 1 }
+
+@media(min-width: 400px){
+	.row {
+		display: flex;
+	}
+}
+
+/**
+ * spread
+ */
+
+.spread {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* reset uls */
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+/**
+ * spacing
+ */
+
+.gutter {
+	padding: 0 15px;
+}
+
+/**
+ * buttons
+ */

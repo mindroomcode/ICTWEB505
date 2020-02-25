@@ -1,0 +1,9 @@
+.tactile {
+	padding: 20px 10px;
+	text-decoration: none;
+	color: inherit;
+	opacity: .6;
+	font-weight: bold;
+	font-size: .8rem;
+	display: inline-block;
+}
