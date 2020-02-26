@@ -1,3 +1,12 @@
+
+/* 
+ * brand colors 
+ */
+
+.bg-pink {
+	background: #fff1f1;
+}
+
 .tactile {
 	padding: 20px 10px;
 	text-decoration: none;
@@ -7,3 +16,17 @@
 	font-size: .8rem;
 	display: inline-block;
 }
+
+.button {
+	display: inline-block;
+	padding: 1em 1.6em;
+	font-size: .8em;
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	letter-spacing: .5px;
+	border-radius: 2px;
+	box-shadow: 0 0 0 2px black;
+	text-transform: uppercase;
+}
+

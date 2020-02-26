@@ -2,10 +2,20 @@
  * columns
  */
 
+.row {
+	max-width: 1280px;
+	margin: auto;
+}
+
 .column {
 	flex: 1;
-	padding: 0 15px;
+	padding-left :15px;
+	padding-right :15px;
 	box-sizing: border-box;
+}
+
+.column img {
+	max-width: 100%;
 }
 
 .span-1 { flex: .0833 }
@@ -21,7 +31,7 @@
 .span-11 { flex: .916 }
 .span-12 { flex: 1 }
 
-@media(min-width: 400px){
+@media(min-width: 768px){
 	.row {
 		display: flex;
 	}
@@ -50,6 +60,56 @@
 	padding: 0 15px;
 }
 
-/**
- * buttons
+/* 
+ * zigzag 
  */
+
+ .zigzag .row:nth-child(2n) {
+	flex-direction: row-reverse; 
+}
+
+
+/*
+ * Utilities
+ */
+
+.mb-1 { margin-bottom: .5em}
+.mb-2 { margin-bottom: 1em}
+.mb-3 { margin-bottom: 1.5em}
+.mb-4 { margin-bottom: 2em}
+.mr-2 { margin-right: 1em}
+
+.m-1 { margin: .5em}
+.m-2 { margin: 1em}
+.m-3 { margin: 1.5em}
+.m-4 { margin: 2em}
+
+.my-0 { 
+	margin-top: 0;
+	margin-bottom: 0;
+ }
+
+.p-1 { padding: .5em}
+.p-2 { padding: 1em}
+.p-3 { padding: 1.5em}
+.p-4 { padding: 2em}
+
+.py-4 {padding-top: 2em; padding-bottom: 2em}
+
+.block {
+	display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.fit-cover {
+	object-fit: cover;
+}
+
+ul.reset {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
