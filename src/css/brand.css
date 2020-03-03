@@ -7,6 +7,13 @@
 	background: #fff1f1;
 }
 
+.bg-purple {
+	background: #D9EAF4;
+}
+.bg-white {
+	background: #fff;
+}
+
 .tactile {
 	padding: 20px 10px;
 	text-decoration: none;

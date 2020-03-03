@@ -2,3 +2,36 @@ body {
     margin: 0;
     font-family: arial;
 }
+
+ul.reset {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
+.fancy {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.fancy::before {
+    content: '';
+    height: 40px;
+    width: 150px;
+    background: #fff1f1;
+    display: block;
+    position: absolute;
+    left: 30%;
+    z-index: -1; 
+    border-right: 40px solid white;
+}

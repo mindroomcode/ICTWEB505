@@ -2,15 +2,19 @@
  * columns
  */
 
-.row {
-	max-width: 1280px;
+ .row {
+	max-width: 768px;
 	margin: auto;
+}
+
+.row-wide {
+	max-width: 1280px;
 }
 
 .column {
 	flex: 1;
-	padding-left :15px;
-	padding-right :15px;
+	padding-left :30px;
+	padding-right :30px;
 	box-sizing: border-box;
 }
 
@@ -34,6 +38,10 @@
 @media(min-width: 768px){
 	.row {
 		display: flex;
+	}
+
+	.row-reverse {
+		flex-direction: row-reverse;
 	}
 }
 
@@ -89,10 +97,11 @@
 	margin-bottom: 0;
  }
 
+
 .p-1 { padding: .5em}
-.p-2 { padding: 1em}
-.p-3 { padding: 1.5em}
-.p-4 { padding: 2em}
+.p-2 { padding: 1.2em}
+.p-3 { padding: 2em}
+.p-4 { padding: 2.4em}
 
 .py-4 {padding-top: 2em; padding-bottom: 2em}
 
@@ -104,12 +113,33 @@
     display: flex;
 }
 
+.flex-1 {
+	flex: 1;
+}
+
+.items-center {
+	align-items: center;
+}
+
 .fit-cover {
 	object-fit: cover;
 }
 
-ul.reset {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.grid {
+	display: grid;
+	grid-gap: 40px;
+}
+
+.grid img {
+	width: 100%;
+	display: inline-block;
+	
+}
+
+.grid-cols-3 {
+	grid-template-columns: 1fr 1fr 1fr
+}
+
+.grid-collasp {
+	grid-gap: 0;
 }
