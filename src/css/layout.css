@@ -162,16 +162,18 @@
 
 .grid img {
 	width: 100%;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 
 .grid-cols-3 {
 	grid-template-columns: 1fr 1fr 1fr
 }
 
-.grid-collasp {
-	grid-gap: 0;
+
+@media (min-width: 768px){
+	.md-grid-cols-3 {
+		grid-template-columns: 1fr 1fr 1fr
+	}
 }
 
 
