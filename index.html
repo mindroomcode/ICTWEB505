@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/layout.css">
     <link rel="stylesheet" href="src/css/typography.css">
     <link rel="stylesheet" href="src/css/brand.css">
+    <link rel="stylesheet" href="src/css/ui.css">
     <title>Document</title>
 </head>
 
@@ -57,7 +58,26 @@
         </div>
     </div>
 
-    <div class="bg-purple">
+
+    <div class="component" style="background: #eee;">
+        <div class="row">
+            <div class="column flex items-center" style="min-height: 300px">
+                <div class="text-center flex-1">
+                    <div style="max-width: 340px; margin: auto;">
+                        <h1>
+                            Cetus
+                        </h1>
+                        <p>Pellentesque urna risus, blandit vitae vehicula a, vestibulum at elit etiam sapien augue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui"><b>Banner</b></div>
+    </div>
+
+
+    <!--
+    <div class="component bg-purple">
         <div class="row" style="background-image: url(images/flower.png); background-image: url(images/flower.png); background-size: contain; background-repeat: no-repeat; background-position-x: 70%;">
             <div class="column flex items-center" style="min-height: 300px">
                 <div class="text-fancy">
@@ -68,10 +88,12 @@
                 </div>
             </div>
         </div>
+        <div class="ui"><b>Banner</b></div>
     </div>
+    -->
 
 
-    <div class="bg-pink">
+    <div class=" component bg-pink">
         <div class="row row-reverse row-wide">
             <div class="column" style="background-image: url(images/cat.jpg); background-size: cover;">
             </div>
@@ -96,30 +118,17 @@
                 </ul>
             </div>
         </div>
+        <div class="ui"><b>Banner-split</b></div>
     </div>
 
 
 
-    <div style="background: #eee;">
-        <div class="row">
-            <div class="column flex items-center" style="min-height: 300px">
-                <div class="text-center flex-1">
-                    <div style="max-width: 340px; margin: auto;">
-                        <h1>
-                            Cetus
-                        </h1>
-                        <p>Pellentesque urna risus, blandit vitae vehicula a, vestibulum at elit etiam sapien augue</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <div class="row py-4">
         <div class="column">
             <div class="grid md-grid-cols-3">
-                <div data-repeat="9">
+                <div class="component" data-repeat="9">
                     <img src="images/placeholder.gif" alt="">
                     <h3 class="my-0 bold text-md">Headline</h3>
                     <div class="spread">
@@ -129,6 +138,7 @@
                             123
                         </div>
                     </div>
+                    <div class="ui"><b>Card</b></div>
                 </div>
             </div>
         </div>
@@ -137,7 +147,7 @@
 
     <!-- ZigZag -->
     <div class="zigzag">
-        <div class="row mb-4" data-repeat="4">
+        <div class="row mb-4 component" data-repeat="4">
             <div class="column">
                 <img src="images/placeholder.gif" alt="">
             </div>
@@ -153,6 +163,7 @@
                     Pellentesque eget interdum mauris.</p>
                 <a class="button" href="#">Learn More</a>
             </div>
+            <div class="ui"><b>Zig-Zag</b></div>
         </div>
     </div>
 

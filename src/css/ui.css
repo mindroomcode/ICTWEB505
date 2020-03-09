@@ -1,0 +1,21 @@
+.ui {
+    box-shadow: inset 0 0 0 4px red;
+    top: 0; left: 0; right: 0; bottom: 0;
+    position: absolute;
+    display: none;
+}
+
+.ui b {
+    padding: .4em;
+    background: red;
+    color: white;
+    position: absolute;
+}
+
+.component {
+    position: relative;
+}
+
+.component:hover .ui {
+    display: block; 
+}
