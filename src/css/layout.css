@@ -7,14 +7,18 @@
 	margin: auto;
 }
 
+.row .row {
+	margin: 0 -1em;
+}
+
 .row-wide {
 	max-width: 1280px;
 }
 
 .column {
 	flex: 1;
-	padding-left :30px;
-	padding-right :30px;
+	padding-left: 1em;
+	padding-right: 1em;
 	box-sizing: border-box;
 }
 
